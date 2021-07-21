@@ -7,16 +7,17 @@
 
 import Foundation
 
-class LoginCoordinator: BaseCoordinator {
+class LoginCoordinator: BaseCoordinator, CoordinatorFlowCompleteProtocol {
     
+    typealias Result = Any?
+    var finishFlow: ((Any?) -> Void)?
     var router: RouterProtocol
-    var coordinatorFactory: LoginCoordinatorFactoryProtocol
-    var controllerFactory: LoginViewControllerFactoryProtocol
+    var ctrlFactory: LoginViewControllerFactoryProtocol
     
-    init(router: RouterProtocol, coordinatorFactory: LoginCoordinatorFactoryProtocol, controllerFactory: LoginViewControllerFactoryProtocol) {
+    init(router: RouterProtocol,
+         controllerFactory: LoginViewControllerFactoryProtocol) {
         self.router = router
-        self.coordinatorFactory = coordinatorFactory
-        self.controllerFactory = controllerFactory
+        self.ctrlFactory = controllerFactory
     }
     
     func start() {
@@ -24,9 +25,38 @@ class LoginCoordinator: BaseCoordinator {
     }
     
     func setupLoginViewController() {
-        let ctrl = controllerFactory.initializeLoginViewController()
-        
+        let ctrl = ctrlFactory.initializeLoginViewController()
+        ctrl.resetHandler = { [weak self] in
+            self?.runForgetFlow()
+        }
+        ctrl.registerHandler = { [weak self] in
+            self?.runRegisterFlow()
+        }
         router.setRootModule(ctrl)
+    }
+    
+    func runForgetFlow() {
+      let coordinator = ResetCoordinatorFactory().makeCoordinator(router: router, resetControllerFactory: ControllerFactory())
+        coordinator.start()
+        addDependency(coordinator)
+        coordinator.finishFlow = { [weak self, weak coordinator] _ in
+            self?.router.popToRootModule()
+            self?.removeDependency(coordinator)
+        }
+    }
+    
+    func runRegisterFlow() {
+        let coordinator = RegisterCoordinatorFactory().makeCoordinator(router: router, controllerFacotry: ControllerFactory())
+        coordinator.finishFlow = { [weak self, weak coordinator] _ in
+            self?.removeDependency(coordinator)
+            self?.finishFlow?(nil)
+        }
+        addDependency(coordinator)
+        coordinator.start()
+    }
+    
+    deinit {
+        print(self)
     }
     
 }

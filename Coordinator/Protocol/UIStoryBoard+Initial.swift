@@ -32,3 +32,7 @@ public extension UIStoryboard {
     }
     
 }
+
+extension UIViewController: StoryboardInitializable {
+    
+}

@@ -9,6 +9,8 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    var registerTapHandler: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerTapped(_ sender: UIButton) {
+        registerTapHandler?()
     }
     
     /*

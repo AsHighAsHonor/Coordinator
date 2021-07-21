@@ -7,20 +7,26 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, StoryboardInitializable {
+class LoginViewController: UIViewController {
 
+    var resetHandler : (() -> Void)?
+    var registerHandler : (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func registerTapped(_ sender: UIButton) {
+        registerHandler?()
     }
     
     @IBAction func loginTapped(_ sender: UIButton) {
     }
     
     @IBAction func forgetTapped(_ sender: UIButton) {
+        resetHandler?()
     }
     
 }

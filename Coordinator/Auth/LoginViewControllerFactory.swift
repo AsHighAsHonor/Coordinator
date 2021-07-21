@@ -11,7 +11,7 @@ protocol LoginViewControllerFactoryProtocol {
     func initializeLoginViewController() -> LoginViewController 
 }
 
-struct LoginViewControllerFactory: LoginViewControllerFactoryProtocol {
+extension ControllerFactory: LoginViewControllerFactoryProtocol {
     
     func initializeLoginViewController() -> LoginViewController {
         let ctrl = LoginViewController.initFromStoryboard()

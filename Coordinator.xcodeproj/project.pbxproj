@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB59183026A6A86200FD9BB5 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59182F26A6A86200FD9BB5 /* ControllerFactory.swift */; };
 		CB5BAD2F269FB89700E042C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD2E269FB89700E042C9 /* AppDelegate.swift */; };
-		CB5BAD31269FB89700E042C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD30269FB89700E042C9 /* SceneDelegate.swift */; };
 		CB5BAD33269FB89700E042C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD32269FB89700E042C9 /* ViewController.swift */; };
 		CB5BAD36269FB89700E042C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD34269FB89700E042C9 /* Main.storyboard */; };
 		CB5BAD38269FB89900E042C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD37269FB89900E042C9 /* Assets.xcassets */; };
@@ -17,10 +17,10 @@
 		CB5BAD4A269FBF7B00E042C9 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD49269FBF7B00E042C9 /* LoginViewController.storyboard */; };
 		CB5BAD4C269FBF9600E042C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD4B269FBF9600E042C9 /* ProfileViewController.swift */; };
 		CB5BAD4E269FBF9E00E042C9 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD4D269FBF9E00E042C9 /* ProfileViewController.storyboard */; };
-		CB5BAD50269FBFBF00E042C9 /* Rest1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD4F269FBFBF00E042C9 /* Rest1ViewController.swift */; };
-		CB5BAD52269FBFC900E042C9 /* Rest1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD51269FBFC900E042C9 /* Rest1ViewController.storyboard */; };
-		CB5BAD54269FC02A00E042C9 /* Rest2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD53269FC02A00E042C9 /* Rest2ViewController.swift */; };
-		CB5BAD56269FC03200E042C9 /* Rest2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD55269FC03200E042C9 /* Rest2ViewController.storyboard */; };
+		CB5BAD50269FBFBF00E042C9 /* Reset1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD4F269FBFBF00E042C9 /* Reset1ViewController.swift */; };
+		CB5BAD52269FBFC900E042C9 /* Reset1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD51269FBFC900E042C9 /* Reset1ViewController.storyboard */; };
+		CB5BAD54269FC02A00E042C9 /* Reset2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD53269FC02A00E042C9 /* Reset2ViewController.swift */; };
+		CB5BAD56269FC03200E042C9 /* Reset2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD55269FC03200E042C9 /* Reset2ViewController.storyboard */; };
 		CB5BAD58269FC06800E042C9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD57269FC06800E042C9 /* RegisterViewController.swift */; };
 		CB5BAD5A269FC07B00E042C9 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5BAD59269FC07B00E042C9 /* RegisterViewController.storyboard */; };
 		CB5BAD5C269FC23C00E042C9 /* GoThrough1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD5B269FC23C00E042C9 /* GoThrough1ViewController.swift */; };
@@ -37,24 +37,29 @@
 		CB5BAD82269FFDB500E042C9 /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD81269FFDB500E042C9 /* ApplicationCoordinatorFactory.swift */; };
 		CB5BAD8426A0087E00E042C9 /* LoginCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8326A0087E00E042C9 /* LoginCoordinatorFactory.swift */; };
 		CB5BAD8626A0093900E042C9 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8526A0093900E042C9 /* CoordinatorFactoryProtocol.swift */; };
-		CB5BAD8826A0116F00E042C9 /* Reset1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8726A0116F00E042C9 /* Reset1Coordinator.swift */; };
+		CB5BAD8826A0116F00E042C9 /* ResetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8726A0116F00E042C9 /* ResetCoordinator.swift */; };
 		CB5BAD8A26A011BB00E042C9 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8926A011BB00E042C9 /* RegisterCoordinator.swift */; };
-		CB5BAD8C26A0131A00E042C9 /* GoThrough1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8B26A0131A00E042C9 /* GoThrough1Coordinator.swift */; };
-		CB5BAD8E26A0148A00E042C9 /* GoThrough1CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8D26A0148A00E042C9 /* GoThrough1CoordinatorFactory.swift */; };
+		CB5BAD8C26A0131A00E042C9 /* GoThroughCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8B26A0131A00E042C9 /* GoThroughCoordinator.swift */; };
+		CB5BAD8E26A0148A00E042C9 /* GoThroughCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8D26A0148A00E042C9 /* GoThroughCoordinatorFactory.swift */; };
 		CB5BAD9026A014C500E042C9 /* RegisterCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD8F26A014C500E042C9 /* RegisterCoordinatorFactory.swift */; };
-		CB5BAD9226A0167C00E042C9 /* Reset1CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9126A0167C00E042C9 /* Reset1CoordinatorFactory.swift */; };
+		CB5BAD9226A0167C00E042C9 /* ResetCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9126A0167C00E042C9 /* ResetCoordinatorFactory.swift */; };
 		CB5BAD9426A01D3900E042C9 /* LunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9326A01D3900E042C9 /* LunchInstructor.swift */; };
 		CB5BAD9726A10F2D00E042C9 /* Representable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9626A10F2D00E042C9 /* Representable.swift */; };
 		CB5BAD9926A1118E00E042C9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9826A1118E00E042C9 /* Router.swift */; };
 		CB5BAD9B26A11E2400E042C9 /* UIViewController+Representable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9A26A11E2400E042C9 /* UIViewController+Representable.swift */; };
 		CB5BAD9D26A1372600E042C9 /* UIStoryBoard+Initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9C26A1372600E042C9 /* UIStoryBoard+Initial.swift */; };
 		CB5BAD9F26A14B9E00E042C9 /* LoginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9E26A14B9E00E042C9 /* LoginViewControllerFactory.swift */; };
+		CB9A096D26A6654C00A539A0 /* ResetViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A096C26A6654C00A539A0 /* ResetViewControllerFactory.swift */; };
+		CBD5D93A26A7C0CF00DC6CAF /* RegisterViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D93926A7C0CE00DC6CAF /* RegisterViewControllerFactory.swift */; };
+		CBD5D93D26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D93C26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift */; };
+		CBD5D94126A7FDC200DC6CAF /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D94026A7FDC200DC6CAF /* OnboardingCoordinator.swift */; };
+		CBD5D94526A7FEA400DC6CAF /* OnboardingCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D94426A7FEA400DC6CAF /* OnboardingCoordinatorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB59182F26A6A86200FD9BB5 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		CB5BAD2B269FB89700E042C9 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5BAD2E269FB89700E042C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB5BAD30269FB89700E042C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB5BAD32269FB89700E042C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB5BAD35269FB89700E042C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB5BAD37269FB89900E042C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,10 +69,10 @@
 		CB5BAD49269FBF7B00E042C9 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		CB5BAD4B269FBF9600E042C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CB5BAD4D269FBF9E00E042C9 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
-		CB5BAD4F269FBFBF00E042C9 /* Rest1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest1ViewController.swift; sourceTree = "<group>"; };
-		CB5BAD51269FBFC900E042C9 /* Rest1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest1ViewController.storyboard; sourceTree = "<group>"; };
-		CB5BAD53269FC02A00E042C9 /* Rest2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest2ViewController.swift; sourceTree = "<group>"; };
-		CB5BAD55269FC03200E042C9 /* Rest2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest2ViewController.storyboard; sourceTree = "<group>"; };
+		CB5BAD4F269FBFBF00E042C9 /* Reset1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reset1ViewController.swift; sourceTree = "<group>"; };
+		CB5BAD51269FBFC900E042C9 /* Reset1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reset1ViewController.storyboard; sourceTree = "<group>"; };
+		CB5BAD53269FC02A00E042C9 /* Reset2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reset2ViewController.swift; sourceTree = "<group>"; };
+		CB5BAD55269FC03200E042C9 /* Reset2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reset2ViewController.storyboard; sourceTree = "<group>"; };
 		CB5BAD57269FC06800E042C9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CB5BAD59269FC07B00E042C9 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
 		CB5BAD5B269FC23C00E042C9 /* GoThrough1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoThrough1ViewController.swift; sourceTree = "<group>"; };
@@ -84,18 +89,23 @@
 		CB5BAD81269FFDB500E042C9 /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
 		CB5BAD8326A0087E00E042C9 /* LoginCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorFactory.swift; sourceTree = "<group>"; };
 		CB5BAD8526A0093900E042C9 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
-		CB5BAD8726A0116F00E042C9 /* Reset1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reset1Coordinator.swift; sourceTree = "<group>"; };
+		CB5BAD8726A0116F00E042C9 /* ResetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCoordinator.swift; sourceTree = "<group>"; };
 		CB5BAD8926A011BB00E042C9 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
-		CB5BAD8B26A0131A00E042C9 /* GoThrough1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoThrough1Coordinator.swift; sourceTree = "<group>"; };
-		CB5BAD8D26A0148A00E042C9 /* GoThrough1CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoThrough1CoordinatorFactory.swift; sourceTree = "<group>"; };
+		CB5BAD8B26A0131A00E042C9 /* GoThroughCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoThroughCoordinator.swift; sourceTree = "<group>"; };
+		CB5BAD8D26A0148A00E042C9 /* GoThroughCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoThroughCoordinatorFactory.swift; sourceTree = "<group>"; };
 		CB5BAD8F26A014C500E042C9 /* RegisterCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinatorFactory.swift; sourceTree = "<group>"; };
-		CB5BAD9126A0167C00E042C9 /* Reset1CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reset1CoordinatorFactory.swift; sourceTree = "<group>"; };
+		CB5BAD9126A0167C00E042C9 /* ResetCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCoordinatorFactory.swift; sourceTree = "<group>"; };
 		CB5BAD9326A01D3900E042C9 /* LunchInstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchInstructor.swift; sourceTree = "<group>"; };
 		CB5BAD9626A10F2D00E042C9 /* Representable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representable.swift; sourceTree = "<group>"; };
 		CB5BAD9826A1118E00E042C9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CB5BAD9A26A11E2400E042C9 /* UIViewController+Representable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Representable.swift"; sourceTree = "<group>"; };
 		CB5BAD9C26A1372600E042C9 /* UIStoryBoard+Initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Initial.swift"; sourceTree = "<group>"; };
 		CB5BAD9E26A14B9E00E042C9 /* LoginViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerFactory.swift; sourceTree = "<group>"; };
+		CB9A096C26A6654C00A539A0 /* ResetViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewControllerFactory.swift; sourceTree = "<group>"; };
+		CBD5D93926A7C0CE00DC6CAF /* RegisterViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerFactory.swift; sourceTree = "<group>"; };
+		CBD5D93C26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerFactory.swift; sourceTree = "<group>"; };
+		CBD5D94026A7FDC200DC6CAF /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		CBD5D94426A7FEA400DC6CAF /* OnboardingCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +147,6 @@
 				CB5BAD44269FBA3C00E042C9 /* Reset */,
 				CB5BAD43269FBA2C00E042C9 /* Register */,
 				CB5BAD42269FB9F600E042C9 /* Gothough */,
-				CB5BAD30269FB89700E042C9 /* SceneDelegate.swift */,
 				CB5BAD32269FB89700E042C9 /* ViewController.swift */,
 				CB5BAD34269FB89700E042C9 /* Main.storyboard */,
 				CB5BAD37269FB89900E042C9 /* Assets.xcassets */,
@@ -167,6 +176,7 @@
 				CB5BAD6C269FDAAD00E042C9 /* ViewModel */,
 				CB5BAD57269FC06800E042C9 /* RegisterViewController.swift */,
 				CB5BAD59269FC07B00E042C9 /* RegisterViewController.storyboard */,
+				CBD5D93926A7C0CE00DC6CAF /* RegisterViewControllerFactory.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -176,10 +186,11 @@
 			children = (
 				CB5BAD70269FE9F400E042C9 /* Coordinator */,
 				CB5BAD6B269FDAA500E042C9 /* ViewModel */,
-				CB5BAD4F269FBFBF00E042C9 /* Rest1ViewController.swift */,
-				CB5BAD51269FBFC900E042C9 /* Rest1ViewController.storyboard */,
-				CB5BAD53269FC02A00E042C9 /* Rest2ViewController.swift */,
-				CB5BAD55269FC03200E042C9 /* Rest2ViewController.storyboard */,
+				CB5BAD4F269FBFBF00E042C9 /* Reset1ViewController.swift */,
+				CB5BAD51269FBFC900E042C9 /* Reset1ViewController.storyboard */,
+				CB5BAD53269FC02A00E042C9 /* Reset2ViewController.swift */,
+				CB5BAD55269FC03200E042C9 /* Reset2ViewController.storyboard */,
+				CB9A096C26A6654C00A539A0 /* ResetViewControllerFactory.swift */,
 			);
 			path = Reset;
 			sourceTree = "<group>";
@@ -210,10 +221,11 @@
 		CB5BAD63269FD49B00E042C9 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				CB5BAD73269FEA1700E042C9 /* Coordinator */,
+				CBD5D93F26A7FDA900DC6CAF /* Coordinator */,
 				CB5BAD68269FDA8B00E042C9 /* ViewModel */,
 				CB5BAD64269FD4B600E042C9 /* OnboardingViewController.swift */,
 				CB5BAD66269FD4BF00E042C9 /* OnboardingViewController.storyboard */,
+				CBD5D93C26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -263,8 +275,8 @@
 		CB5BAD6E269FE9D900E042C9 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				CB5BAD8B26A0131A00E042C9 /* GoThrough1Coordinator.swift */,
-				CB5BAD8D26A0148A00E042C9 /* GoThrough1CoordinatorFactory.swift */,
+				CB5BAD8B26A0131A00E042C9 /* GoThroughCoordinator.swift */,
+				CB5BAD8D26A0148A00E042C9 /* GoThroughCoordinatorFactory.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -281,8 +293,8 @@
 		CB5BAD70269FE9F400E042C9 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				CB5BAD8726A0116F00E042C9 /* Reset1Coordinator.swift */,
-				CB5BAD9126A0167C00E042C9 /* Reset1CoordinatorFactory.swift */,
+				CB5BAD8726A0116F00E042C9 /* ResetCoordinator.swift */,
+				CB5BAD9126A0167C00E042C9 /* ResetCoordinatorFactory.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -297,13 +309,6 @@
 			sourceTree = "<group>";
 		};
 		CB5BAD72269FEA0600E042C9 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		CB5BAD73269FEA1700E042C9 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -347,8 +352,18 @@
 			children = (
 				CB5BAD9326A01D3900E042C9 /* LunchInstructor.swift */,
 				CB5BAD9826A1118E00E042C9 /* Router.swift */,
+				CB59182F26A6A86200FD9BB5 /* ControllerFactory.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		CBD5D93F26A7FDA900DC6CAF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5D94026A7FDC200DC6CAF /* OnboardingCoordinator.swift */,
+				CBD5D94426A7FEA400DC6CAF /* OnboardingCoordinatorFactory.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,8 +432,8 @@
 				CB5BAD5A269FC07B00E042C9 /* RegisterViewController.storyboard in Resources */,
 				CB5BAD36269FB89700E042C9 /* Main.storyboard in Resources */,
 				CB5BAD62269FC27B00E042C9 /* GoTrough2ViewController.storyboard in Resources */,
-				CB5BAD56269FC03200E042C9 /* Rest2ViewController.storyboard in Resources */,
-				CB5BAD52269FBFC900E042C9 /* Rest1ViewController.storyboard in Resources */,
+				CB5BAD56269FC03200E042C9 /* Reset2ViewController.storyboard in Resources */,
+				CB5BAD52269FBFC900E042C9 /* Reset1ViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,20 +444,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD5D93D26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift in Sources */,
 				CB5BAD48269FBF5300E042C9 /* LoginViewController.swift in Sources */,
+				CB9A096D26A6654C00A539A0 /* ResetViewControllerFactory.swift in Sources */,
 				CB5BAD33269FB89700E042C9 /* ViewController.swift in Sources */,
-				CB5BAD8826A0116F00E042C9 /* Reset1Coordinator.swift in Sources */,
+				CB5BAD8826A0116F00E042C9 /* ResetCoordinator.swift in Sources */,
 				CB5BAD7A269FF10100E042C9 /* LoginCoordinator.swift in Sources */,
 				CB5BAD76269FED7200E042C9 /* CoordinatorProtocol.swift in Sources */,
 				CB5BAD9B26A11E2400E042C9 /* UIViewController+Representable.swift in Sources */,
 				CB5BAD9426A01D3900E042C9 /* LunchInstructor.swift in Sources */,
-				CB5BAD50269FBFBF00E042C9 /* Rest1ViewController.swift in Sources */,
+				CB5BAD50269FBFBF00E042C9 /* Reset1ViewController.swift in Sources */,
 				CB5BAD58269FC06800E042C9 /* RegisterViewController.swift in Sources */,
 				CB5BAD4C269FBF9600E042C9 /* ProfileViewController.swift in Sources */,
 				CB5BAD2F269FB89700E042C9 /* AppDelegate.swift in Sources */,
-				CB5BAD8E26A0148A00E042C9 /* GoThrough1CoordinatorFactory.swift in Sources */,
+				CB5BAD8E26A0148A00E042C9 /* GoThroughCoordinatorFactory.swift in Sources */,
 				CB5BAD8626A0093900E042C9 /* CoordinatorFactoryProtocol.swift in Sources */,
-				CB5BAD31269FB89700E042C9 /* SceneDelegate.swift in Sources */,
+				CB59183026A6A86200FD9BB5 /* ControllerFactory.swift in Sources */,
 				CB5BAD9726A10F2D00E042C9 /* Representable.swift in Sources */,
 				CB5BAD78269FF05900E042C9 /* RouterProtocol.swift in Sources */,
 				CB5BAD5C269FC23C00E042C9 /* GoThrough1ViewController.swift in Sources */,
@@ -450,15 +467,18 @@
 				CB5BAD65269FD4B600E042C9 /* OnboardingViewController.swift in Sources */,
 				CB5BAD9D26A1372600E042C9 /* UIStoryBoard+Initial.swift in Sources */,
 				CB5BAD9026A014C500E042C9 /* RegisterCoordinatorFactory.swift in Sources */,
-				CB5BAD9226A0167C00E042C9 /* Reset1CoordinatorFactory.swift in Sources */,
+				CB5BAD9226A0167C00E042C9 /* ResetCoordinatorFactory.swift in Sources */,
+				CBD5D94126A7FDC200DC6CAF /* OnboardingCoordinator.swift in Sources */,
+				CBD5D93A26A7C0CF00DC6CAF /* RegisterViewControllerFactory.swift in Sources */,
 				CB5BAD9F26A14B9E00E042C9 /* LoginViewControllerFactory.swift in Sources */,
 				CB5BAD8426A0087E00E042C9 /* LoginCoordinatorFactory.swift in Sources */,
 				CB5BAD7E269FF30E00E042C9 /* ApplicationCoordinator.swift in Sources */,
 				CB5BAD8A26A011BB00E042C9 /* RegisterCoordinator.swift in Sources */,
-				CB5BAD54269FC02A00E042C9 /* Rest2ViewController.swift in Sources */,
+				CB5BAD54269FC02A00E042C9 /* Reset2ViewController.swift in Sources */,
 				CB5BAD9926A1118E00E042C9 /* Router.swift in Sources */,
+				CBD5D94526A7FEA400DC6CAF /* OnboardingCoordinatorFactory.swift in Sources */,
 				CB5BAD82269FFDB500E042C9 /* ApplicationCoordinatorFactory.swift in Sources */,
-				CB5BAD8C26A0131A00E042C9 /* GoThrough1Coordinator.swift in Sources */,
+				CB5BAD8C26A0131A00E042C9 /* GoThroughCoordinator.swift in Sources */,
 				CB5BAD80269FF33900E042C9 /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LBWTC2FD2;
 				INFOPLIST_FILE = Coordinator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,6 +649,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LBWTC2FD2;
 				INFOPLIST_FILE = Coordinator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

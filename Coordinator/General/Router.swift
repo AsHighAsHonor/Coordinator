@@ -9,7 +9,7 @@ import UIKit
 
 class Router: NSObject {
     
-    private var rootNav: UINavigationController?
+    var rootNav: UINavigationController?
     private var transition: UIViewControllerAnimatedTransitioning?
     
     init(rootController: UINavigationController) {

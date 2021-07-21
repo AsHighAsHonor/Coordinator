@@ -10,22 +10,26 @@ import UIKit
 class ApplicationCoordinator: BaseCoordinator {
     
     var router: RouterProtocol
-    var authFactory: LoginCoordinatorFactoryProtocol
-    var registerFactory: RegisterCoordinatorFactoryProtocol
-    var reset1Factory: Reset1CoordinatorFactoryProtocol
-    var goThough1Factory: GoThrough1CoordinatorFactoryProtocol
+//    var authFactory: LoginCoordinatorFactoryProtocol
+//    var registerFactory: RegisterCoordinatorFactoryProtocol
+//    var reset1Factory: ResetCoordinatorFactoryProtocol
+//    var goThough1Factory: GoThroughCoordinatorFactoryProtocol
     var launchInstructor = LaunchInstructor.configure()
     
-    init(routeable: RouterProtocol,
-         authCoordinatorFactory: LoginCoordinatorFactoryProtocol,
-         reset1CoordinatorFactory: Reset1CoordinatorFactoryProtocol,
-         registerCoordinatorFactory: RegisterCoordinatorFactoryProtocol,
-         goThough1CoordinatorFactory: GoThrough1CoordinatorFactoryProtocol) {
+//    init(routeable: RouterProtocol,
+//         authCoordinatorFactory: LoginCoordinatorFactoryProtocol,
+//         reset1CoordinatorFactory: ResetCoordinatorFactoryProtocol,
+//         registerCoordinatorFactory: RegisterCoordinatorFactoryProtocol,
+//         goThough1CoordinatorFactory: GoThroughCoordinatorFactoryProtocol) {
+//        router = routeable
+//        authFactory = authCoordinatorFactory
+//        registerFactory = registerCoordinatorFactory
+//        goThough1Factory = goThough1CoordinatorFactory
+//        reset1Factory = reset1CoordinatorFactory
+//    }
+    
+    init(routeable: RouterProtocol) {
         router = routeable
-        authFactory = authCoordinatorFactory
-        registerFactory = registerCoordinatorFactory
-        goThough1Factory = goThough1CoordinatorFactory
-        reset1Factory = reset1CoordinatorFactory
     }
     
     func start() {
@@ -40,8 +44,15 @@ class ApplicationCoordinator: BaseCoordinator {
     }
     
     private func runAuthFlow() {
-        let coordinator = authFactory.makeCoordinator()
-        
+        let coordinator = LoginCoordinatorFactory().makeCoordinator(router: router,
+                                                      controllerFacotry: ControllerFactory())
+        coordinator.finishFlow = { [weak self, weak coordinator] _ in
+            self?.removeDependency(coordinator)
+            self?.launchInstructor = LaunchInstructor.configure(tutorialWasShown: true, isAutorized: true)
+            self?.start()
+        }
+        addDependency(coordinator)
+        coordinator.start()
     }
     
     private func runOnboardingFlow() {
@@ -50,6 +61,10 @@ class ApplicationCoordinator: BaseCoordinator {
     
     private func runMainFlow() {
         
+    }
+    
+    deinit {
+        print(self)
     }
     
 }

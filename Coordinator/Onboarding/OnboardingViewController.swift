@@ -8,7 +8,9 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-
+    
+    var finishTapHandler: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +22,7 @@ class OnboardingViewController: UIViewController {
     }
     
     @IBAction func finishTapped(_ sender: Any) {
-        
+        finishTapHandler?()
     }
     /*
     // MARK: - Navigation

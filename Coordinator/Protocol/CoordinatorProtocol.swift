@@ -16,3 +16,8 @@ extension CoordinatorProtocol {
         fatalError("Must implement")
     }
 }
+
+protocol CoordinatorFlowCompleteProtocol: AnyObject {
+    associatedtype Result
+    var finishFlow: ((Result) -> Void)? { get set }
+ }

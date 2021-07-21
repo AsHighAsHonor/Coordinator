@@ -8,12 +8,14 @@
 import Foundation
 
 protocol RegisterCoordinatorFactoryProtocol: CoordinatorFactoryProtocol {
-    func makeCoordinator() -> RegisterCoordinator
+    func makeCoordinator(router: RouterProtocol,
+                        controllerFacotry: RegisterViewControllerFactoryProtocol) -> RegisterCoordinator
 }
 
 class RegisterCoordinatorFactory: RegisterCoordinatorFactoryProtocol {
 
-    func makeCoordinator() -> RegisterCoordinator {
-        return RegisterCoordinator()
+    func makeCoordinator(router: RouterProtocol,
+                         controllerFacotry: RegisterViewControllerFactoryProtocol) -> RegisterCoordinator {
+        return RegisterCoordinator(router: router, controllerFactory: controllerFacotry)
     }
 }

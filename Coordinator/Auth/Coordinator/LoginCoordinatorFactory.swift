@@ -8,13 +8,15 @@
 import Foundation
 
 protocol LoginCoordinatorFactoryProtocol: CoordinatorFactoryProtocol {
-    func makeCoordinator(router: RouterProtocol, coordinatorFactory: LoginCoordinatorFactoryProtocol, controllerFacotry: LoginViewControllerFactoryProtocol) -> LoginCoordinator
+    func makeCoordinator(router: RouterProtocol,
+                        controllerFacotry: LoginViewControllerFactoryProtocol) -> LoginCoordinator
 }
 
 class LoginCoordinatorFactory: LoginCoordinatorFactoryProtocol {
    
-    func makeCoordinator(router: RouterProtocol, coordinatorFactory: LoginCoordinatorFactoryProtocol, controllerFacotry: LoginViewControllerFactoryProtocol) -> LoginCoordinator {
-        let coordinator = LoginCoordinator(router: router, coordinatorFactory: coordinatorFactory, controllerFactory: controllerFacotry)
+    func makeCoordinator(router: RouterProtocol,
+                         controllerFacotry: LoginViewControllerFactoryProtocol) -> LoginCoordinator {
+        let coordinator = LoginCoordinator(router: router, controllerFactory: controllerFacotry)
         return coordinator
     }
 }

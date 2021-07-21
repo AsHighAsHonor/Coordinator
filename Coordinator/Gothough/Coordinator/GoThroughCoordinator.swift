@@ -1,5 +1,5 @@
 //
-//  Reset1Coordinator.swift
+//  GoThroughCoordinator.swift
 //  Coordinator
 //
 //  Created by YYang1 on 15/7/21.
@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-class Reset1Coordinator: BaseCoordinator {
+class GoThroughCoordinator: BaseCoordinator {
     
     func start() {
                 

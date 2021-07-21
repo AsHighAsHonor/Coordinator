@@ -11,7 +11,7 @@ import Foundation
 
 class ApplicationCoordinatorFactory: CoordinatorFactoryProtocol {
     
-//    func makeCoordinator() -> ApplicationCoordinator {
-//        return ApplicationCoordinator(routeable: <#RouterProtocol#>, authCoordinatorFactory: <#LoginCoordinatorFactoryProtocol#>, reset1CoordinatorFactory: <#Reset1CoordinatorFactoryProtocol#>, registerCoordinatorFactory: <#RegisterCoordinatorFactoryProtocol#>, goThough1CoordinatorFactory: <#GoThrough1CoordinatorFactoryProtocol#>)
-//    }
+    func makeCoordinator(router: RouterProtocol) -> ApplicationCoordinator {
+        return ApplicationCoordinator(routeable: router)
+    }
 }

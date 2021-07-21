@@ -1,5 +1,5 @@
 //
-//  Rest2ViewController.swift
+//  Reset2ViewController.swift
 //  Coordinator
 //
 //  Created by YYang1 on 15/7/21.
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class Rest2ViewController: UIViewController {
+class Reset2ViewController: UIViewController {
 
+    var doneHandler: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,7 @@ class Rest2ViewController: UIViewController {
     }
     
     @IBAction func resetTapped(_ sender: UIButton) {
+        doneHandler?()
     }
     
     /*
