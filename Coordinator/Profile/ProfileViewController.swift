@@ -9,6 +9,9 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    var logoutTappedHander: (() -> Void)?
+    var resetTappedHander: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,9 +20,11 @@ class ProfileViewController: UIViewController {
     @IBAction func backTapped(_ sender: UIButton) {
     }
     
-    @IBAction func restTapped(_ sender: UIButton) {
+    @IBAction func resetTapped(_ sender: UIButton) {
+        resetTappedHander?()
     }
     @IBAction func logoutTapped(_ sender: Any) {
+        logoutTappedHander?()
     }
     
 }

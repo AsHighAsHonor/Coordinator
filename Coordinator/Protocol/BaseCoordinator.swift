@@ -28,4 +28,8 @@ class BaseCoordinator: CoordinatorProtocol {
             }
         }
     }
+    
+    deinit {
+        print(self)
+    }
 }

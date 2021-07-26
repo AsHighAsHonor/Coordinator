@@ -50,6 +50,14 @@
 		CB5BAD9D26A1372600E042C9 /* UIStoryBoard+Initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9C26A1372600E042C9 /* UIStoryBoard+Initial.swift */; };
 		CB5BAD9F26A14B9E00E042C9 /* LoginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BAD9E26A14B9E00E042C9 /* LoginViewControllerFactory.swift */; };
 		CB9A096D26A6654C00A539A0 /* ResetViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A096C26A6654C00A539A0 /* ResetViewControllerFactory.swift */; };
+		CBD370D926AE482E007C24C7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370D826AE482E007C24C7 /* TabBarViewController.swift */; };
+		CBD370DD26AE4C38007C24C7 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370DC26AE4C38007C24C7 /* TabBarCoordinator.swift */; };
+		CBD370E226AE4E4F007C24C7 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370E126AE4E4F007C24C7 /* ProfileCoordinator.swift */; };
+		CBD370E626AE4E5E007C24C7 /* ProfileCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370E526AE4E5E007C24C7 /* ProfileCoordinatorFactory.swift */; };
+		CBD370E926AE4EBD007C24C7 /* ProfileViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370E826AE4EBD007C24C7 /* ProfileViewControllerFactory.swift */; };
+		CBD370EC26AE5120007C24C7 /* GoThroughViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370EB26AE5120007C24C7 /* GoThroughViewControllerFactory.swift */; };
+		CBD370EF26AE5952007C24C7 /* TabBarViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370EE26AE5952007C24C7 /* TabBarViewControllerFactory.swift */; };
+		CBD370F226AE5A8E007C24C7 /* TabBarCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD370F126AE5A8E007C24C7 /* TabBarCoordinatorFactory.swift */; };
 		CBD5D93A26A7C0CF00DC6CAF /* RegisterViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D93926A7C0CE00DC6CAF /* RegisterViewControllerFactory.swift */; };
 		CBD5D93D26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D93C26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift */; };
 		CBD5D94126A7FDC200DC6CAF /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D94026A7FDC200DC6CAF /* OnboardingCoordinator.swift */; };
@@ -102,6 +110,14 @@
 		CB5BAD9C26A1372600E042C9 /* UIStoryBoard+Initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Initial.swift"; sourceTree = "<group>"; };
 		CB5BAD9E26A14B9E00E042C9 /* LoginViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerFactory.swift; sourceTree = "<group>"; };
 		CB9A096C26A6654C00A539A0 /* ResetViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewControllerFactory.swift; sourceTree = "<group>"; };
+		CBD370D826AE482E007C24C7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CBD370DC26AE4C38007C24C7 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		CBD370E126AE4E4F007C24C7 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		CBD370E526AE4E5E007C24C7 /* ProfileCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorFactory.swift; sourceTree = "<group>"; };
+		CBD370E826AE4EBD007C24C7 /* ProfileViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerFactory.swift; sourceTree = "<group>"; };
+		CBD370EB26AE5120007C24C7 /* GoThroughViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoThroughViewControllerFactory.swift; sourceTree = "<group>"; };
+		CBD370EE26AE5952007C24C7 /* TabBarViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerFactory.swift; sourceTree = "<group>"; };
+		CBD370F126AE5A8E007C24C7 /* TabBarCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorFactory.swift; sourceTree = "<group>"; };
 		CBD5D93926A7C0CE00DC6CAF /* RegisterViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerFactory.swift; sourceTree = "<group>"; };
 		CBD5D93C26A7FC6400DC6CAF /* OnboardingViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerFactory.swift; sourceTree = "<group>"; };
 		CBD5D94026A7FDC200DC6CAF /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
@@ -138,6 +154,7 @@
 		CB5BAD2D269FB89700E042C9 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				CBD370D726AE476E007C24C7 /* Tabbar */,
 				CB5BAD9526A10AE300E042C9 /* General */,
 				CB5BAD7B269FF2CE00E042C9 /* Application */,
 				CB5BAD74269FEA8900E042C9 /* Protocol */,
@@ -165,6 +182,7 @@
 				CB5BAD5D269FC24B00E042C9 /* GoThrough1ViewController.storyboard */,
 				CB5BAD5F269FC26C00E042C9 /* GoThrough2ViewController.swift */,
 				CB5BAD61269FC27B00E042C9 /* GoTrough2ViewController.storyboard */,
+				CBD370EB26AE5120007C24C7 /* GoThroughViewControllerFactory.swift */,
 			);
 			path = Gothough;
 			sourceTree = "<group>";
@@ -210,10 +228,10 @@
 		CB5BAD46269FBB0000E042C9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				CB5BAD72269FEA0600E042C9 /* Coordinator */,
-				CB5BAD69269FDA9600E042C9 /* ViewModel */,
+				CBD370E026AE4E3A007C24C7 /* Coordinator */,
 				CB5BAD4B269FBF9600E042C9 /* ProfileViewController.swift */,
 				CB5BAD4D269FBF9E00E042C9 /* ProfileViewController.storyboard */,
+				CBD370E826AE4EBD007C24C7 /* ProfileViewControllerFactory.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -231,13 +249,6 @@
 			sourceTree = "<group>";
 		};
 		CB5BAD68269FDA8B00E042C9 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		CB5BAD69269FDA9600E042C9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -308,13 +319,6 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		CB5BAD72269FEA0600E042C9 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		CB5BAD74269FEA8900E042C9 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +359,34 @@
 				CB59182F26A6A86200FD9BB5 /* ControllerFactory.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		CBD370D726AE476E007C24C7 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				CBD370DB26AE4B42007C24C7 /* Coordinator */,
+				CBD370D826AE482E007C24C7 /* TabBarViewController.swift */,
+				CBD370EE26AE5952007C24C7 /* TabBarViewControllerFactory.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		CBD370DB26AE4B42007C24C7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CBD370DC26AE4C38007C24C7 /* TabBarCoordinator.swift */,
+				CBD370F126AE5A8E007C24C7 /* TabBarCoordinatorFactory.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CBD370E026AE4E3A007C24C7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CBD370E126AE4E4F007C24C7 /* ProfileCoordinator.swift */,
+				CBD370E526AE4E5E007C24C7 /* ProfileCoordinatorFactory.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		CBD5D93F26A7FDA900DC6CAF /* Coordinator */ = {
@@ -452,13 +484,20 @@
 				CB5BAD7A269FF10100E042C9 /* LoginCoordinator.swift in Sources */,
 				CB5BAD76269FED7200E042C9 /* CoordinatorProtocol.swift in Sources */,
 				CB5BAD9B26A11E2400E042C9 /* UIViewController+Representable.swift in Sources */,
+				CBD370EF26AE5952007C24C7 /* TabBarViewControllerFactory.swift in Sources */,
+				CBD370F226AE5A8E007C24C7 /* TabBarCoordinatorFactory.swift in Sources */,
 				CB5BAD9426A01D3900E042C9 /* LunchInstructor.swift in Sources */,
+				CBD370E926AE4EBD007C24C7 /* ProfileViewControllerFactory.swift in Sources */,
 				CB5BAD50269FBFBF00E042C9 /* Reset1ViewController.swift in Sources */,
+				CBD370DD26AE4C38007C24C7 /* TabBarCoordinator.swift in Sources */,
+				CBD370D926AE482E007C24C7 /* TabBarViewController.swift in Sources */,
 				CB5BAD58269FC06800E042C9 /* RegisterViewController.swift in Sources */,
 				CB5BAD4C269FBF9600E042C9 /* ProfileViewController.swift in Sources */,
 				CB5BAD2F269FB89700E042C9 /* AppDelegate.swift in Sources */,
+				CBD370E626AE4E5E007C24C7 /* ProfileCoordinatorFactory.swift in Sources */,
 				CB5BAD8E26A0148A00E042C9 /* GoThroughCoordinatorFactory.swift in Sources */,
 				CB5BAD8626A0093900E042C9 /* CoordinatorFactoryProtocol.swift in Sources */,
+				CBD370EC26AE5120007C24C7 /* GoThroughViewControllerFactory.swift in Sources */,
 				CB59183026A6A86200FD9BB5 /* ControllerFactory.swift in Sources */,
 				CB5BAD9726A10F2D00E042C9 /* Representable.swift in Sources */,
 				CB5BAD78269FF05900E042C9 /* RouterProtocol.swift in Sources */,
@@ -476,6 +515,7 @@
 				CB5BAD8A26A011BB00E042C9 /* RegisterCoordinator.swift in Sources */,
 				CB5BAD54269FC02A00E042C9 /* Reset2ViewController.swift in Sources */,
 				CB5BAD9926A1118E00E042C9 /* Router.swift in Sources */,
+				CBD370E226AE4E4F007C24C7 /* ProfileCoordinator.swift in Sources */,
 				CBD5D94526A7FEA400DC6CAF /* OnboardingCoordinatorFactory.swift in Sources */,
 				CB5BAD82269FFDB500E042C9 /* ApplicationCoordinatorFactory.swift in Sources */,
 				CB5BAD8C26A0131A00E042C9 /* GoThroughCoordinator.swift in Sources */,

@@ -10,23 +10,7 @@ import UIKit
 class ApplicationCoordinator: BaseCoordinator {
     
     var router: RouterProtocol
-//    var authFactory: LoginCoordinatorFactoryProtocol
-//    var registerFactory: RegisterCoordinatorFactoryProtocol
-//    var reset1Factory: ResetCoordinatorFactoryProtocol
-//    var goThough1Factory: GoThroughCoordinatorFactoryProtocol
     var launchInstructor = LaunchInstructor.configure()
-    
-//    init(routeable: RouterProtocol,
-//         authCoordinatorFactory: LoginCoordinatorFactoryProtocol,
-//         reset1CoordinatorFactory: ResetCoordinatorFactoryProtocol,
-//         registerCoordinatorFactory: RegisterCoordinatorFactoryProtocol,
-//         goThough1CoordinatorFactory: GoThroughCoordinatorFactoryProtocol) {
-//        router = routeable
-//        authFactory = authCoordinatorFactory
-//        registerFactory = registerCoordinatorFactory
-//        goThough1Factory = goThough1CoordinatorFactory
-//        reset1Factory = reset1CoordinatorFactory
-//    }
     
     init(routeable: RouterProtocol) {
         router = routeable
@@ -48,7 +32,7 @@ class ApplicationCoordinator: BaseCoordinator {
                                                       controllerFacotry: ControllerFactory())
         coordinator.finishFlow = { [weak self, weak coordinator] _ in
             self?.removeDependency(coordinator)
-            self?.launchInstructor = LaunchInstructor.configure(tutorialWasShown: true, isAutorized: true)
+            self?.launchInstructor = LaunchInstructor.configure(tutorialWasShown: false, isAutorized: true)
             self?.start()
         }
         addDependency(coordinator)
@@ -56,11 +40,26 @@ class ApplicationCoordinator: BaseCoordinator {
     }
     
     private func runOnboardingFlow() {
-        
+        let coordinator = OnboardingCoordinatorFactory().makeCoordinator(router: router, controllerFacotry: ControllerFactory())
+        coordinator.finishFlow = { [weak self, weak coordinator] _ in
+            self?.launchInstructor = LaunchInstructor.configure(tutorialWasShown: true, isAutorized: true)
+            self?.removeDependency(coordinator)
+            self?.start()
+        }
+        addDependency(coordinator)
+        coordinator.start()
     }
     
     private func runMainFlow() {
-        
+        let coordinator = TabBarCoordinatorFactory().makeCoordinator(router: router, controllerFacotry: ControllerFactory())
+//        coordinator.finishFlow = { [weak self, weak coordinator] _ in
+//            self?.launchInstructor = LaunchInstructor.configure(tutorialWasShown: true, isAutorized: true)
+//            self?.removeDependency(coordinator)
+//            self?.start()
+//        }
+        addDependency(coordinator)
+        router.setRootModule(coordinator.tabCtrl)
+        coordinator.start()
     }
     
     deinit {

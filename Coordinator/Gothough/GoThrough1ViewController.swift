@@ -9,13 +9,18 @@ import UIKit
 
 class GoThrough1ViewController: UIViewController {
 
+    var goToNextTapHandler: (() -> Void)?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func goToNextTapped(_ sender: UIButton) {
+        goToNextTapHandler?()
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -8,12 +8,12 @@
 import Foundation
 
 protocol GoThroughCoordinatorFactoryProtocol: CoordinatorFactoryProtocol {
-    func makeCoordinator() -> GoThroughCoordinator
+    func makeCoordinator(router: RouterProtocol, controllerFactory: GoThrough1ViewControllerFactoryProtocol & GoThrough2ViewControllerFactoryProtocol) -> GoThroughCoordinator
 }
 
 class GoThroughCoordinatorFactory: GoThroughCoordinatorFactoryProtocol {
 
-    func makeCoordinator() -> GoThroughCoordinator {
-        return GoThroughCoordinator()
+    func makeCoordinator(router: RouterProtocol, controllerFactory: GoThrough1ViewControllerFactoryProtocol & GoThrough2ViewControllerFactoryProtocol) -> GoThroughCoordinator {
+        return GoThroughCoordinator(router: router, controllerFactory: controllerFactory)
     }
 }

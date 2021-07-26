@@ -28,19 +28,9 @@ class RegisterCoordinator: BaseCoordinator, CoordinatorFlowCompleteProtocol {
     func setupRegisterController() {
         let ctrl = ctrlFactory.initializeRegisterController()
         ctrl.registerTapHandler = { [weak self] in
-            self?.runOnboardingFlow()
-        }
-        router.push(ctrl)
-    }
-    
-    func runOnboardingFlow() {
-        let coordinator = OnboardingCoordinatorFactory().makeCoordinator(router: router, controllerFacotry: ControllerFactory())
-        coordinator.finishFlow = { [weak self, weak coordinator] _ in
-            self?.removeDependency(coordinator)
             self?.finishFlow?(nil)
         }
-        addDependency(coordinator)
-        coordinator.start()
+        router.push(ctrl)
     }
     
     deinit {
